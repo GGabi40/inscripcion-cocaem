@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="website icon" href="./src/assets/img/logos/Logo CoCAEM.png">
+
+    <title>CoCAEM 2023 | Formulario de Inscripción</title>
+</head>
+<body>
+    <main class="contain-all">
+        <h1>
+            Inscripción a “XXXIV Congreso Científico Argentino de Estudiantes de Medicina”
+        </h1>
+
+        <section class="formulario">
+
+            <form action="" method="post" class="formulario-inscripcion">
+                    <label for="name" >Nombres: <span class="req" title="Campo Obligatorio"> *</span>
+                        <input type="text" name="name" id="name" required>
+                    </label>
+
+                    <label for="surname">Apellidos: <span class="req" title="Campo Obligatorio"> *</span>
+                        <input type="text" name="surname" id="surname" required>
+                    </label>
+
+                    <label for="dni">DNI / Pasaporte: <span class="req" title="Campo Obligatorio"> *</span>
+                        <input type="text" name="dni" id="dni" maxlength="8" required>
+                    </label>
+
+                    <label for="tel-number">Teléfono: <span class="req" title="Campo Obligatorio"> *</span>
+                        <input type="number" name="tel-number" minlength="7" id="tel-number" required>
+                    </label>
+
+                <div id="width-complete">
+                    <label for="email">Mail para Contacto: <span class="req" title="Campo Obligatorio"> *</span>
+                        <input type="email" name="email" id="input--mail" required>
+                    </label>
+                    
+                    <fieldset>
+                        <legend>¿Presentará un Trabajo Científico?</legend>
+                        <label for="presenta-trabajo">Sí
+                            <input type="radio" name="presenta-trabajo" value="presentador" id="beca--input">
+                        </label>
+                        <label for="presenta-trabajo">No
+                            <input type="radio" name="presenta-trabajo" value="no-presentador" id="beca--input">
+                        </label>
+
+                        <span id="attention">¡Atención! Leer <a href="http://bit.ly/byc2023" target="_blank" rel="noopener noreferrer"> Bases para la Presentación de Trabajos Científicos</a></span>
+                    </fieldset>
+
+                    <fieldset class="input-radio--member">
+                        <legend>¿Es un miembro de FACES?</legend>
+
+                        <label for="memberFaces">Sí
+                            <input type="radio" name="memberFaces" value="miembro" id="member--input">
+                        </label>
+                        <label for="memberFaces">No
+                            <input type="radio" name="memberFaces" value="noMiembro" id="member--input">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="input--sociedad">
+                        <legend>¿A qué sociedad pertenece?</legend>
+
+                        <select name="sociedad-member" id="select--sociedad" class="member-sociedad">
+                            <option value="">Selecciona una opción</option>
+                            <option value="acema">ACEMA</option>
+                            <option value="aecuba">AECUBA</option>
+                            <option value="soccemgm">SoCCEM GM</option>
+                            <option value="socemunne">SoCEM UNNE</option>
+                            <option value="scemt">SCEMT</option>
+                            <option value="seicsunse">SEICS-UNSE</option>
+                            <option value="socemcauncaus">SoCEMCA UNCAus</option>
+                        </select>
+                    </fieldset>
+
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    
+    </main>
+
+    
+    <footer id="footer">
+        <div class="footer-cocaem">
+            <div class="contain-logos">
+                <div class="white-bg-logo">
+                    <a href="http://cocaem.acresrosario.com" target="_blank" rel="noopener noreferrer">
+                        <img src="./src/assets/img/logos/Logo CoCAEM.png" alt="Logo CoCAEM">
+                    </a>
+                </div>
+
+                <div class="other-logos">
+                    <a href="http://acresrosario.com" target="_blank" rel="noopener noreferrer">
+                        <img src="./src/assets/img/logos/Logo ACRES.png" alt="Logo ACRES">
+                    </a>
+                    <a href="http://instagram.com/faces.virtual" target="_blank" rel="noopener noreferrer">
+                        <img src="./src/assets/img/logos/Logo FACES.png" alt="Logo FACES">
+                    </a>
+                    <a href="http://fcm.unr.edu.ar" target="_blank" rel="noopener noreferrer">
+                        <img src="./src/assets/img/logos/Logo FCM.png" alt="Logo FCM-UNR">
+                    </a>
+                </div>
+            </div>
+
+            <div class="contain-social-media">
+                <div class="ig">
+                    <a href="http://instagram.com/cocaem.rosario" target="_blank" rel="noopener noreferrer" id="ig-cocaem">
+                        <img src="./src/assets/img/icons/icon instagram.png" alt="Logo instagram">
+                        <span>
+                            @cocaem.rosario
+                        </span>
+                    </a>
+                </div>
+
+                <div class="maps">
+                    <div class="map">
+                        <a href="https://www.google.com/maps/search/Santa+Fe+3102+-+C.P+2000+Rosario/@-32.953808,-60.6401331,15z" target="_blank" rel="noopener noreferrer" id="maps-cocaem">
+                            <img src="./src/assets/img/icons/icon ubic.png" alt="Ubicación CoCAEM">
+                            <span>
+                                Santa Fe 3102 - C.P 2000 Rosario
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mail">
+                    <a href="mailto:cocaem2023@gmail.com" target="_blank" rel="noopener noreferrer" id="mail-cocaem">
+                        <img src="./src/assets/img/icons/icon mail.png" alt="Mail de Contacto">
+                        <span>
+                            cocaemrosario2023@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ggabi">
+            <p id="ggabi-footer">Desarrollado con <span>♥️</span> por <a href="https://ggabi40.github.io/linktree/" target="_blank">Gabriela
+                B. Carvalho</a>.</p>
+        </div>
+    </footer>
+
+    <script src="./public/assets/js/bundle.js"></script>
+</body>
+</html>
